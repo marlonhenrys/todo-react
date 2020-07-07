@@ -1,0 +1,38 @@
+.ItemTodo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 250px;
+  border-bottom: 1px solid grey;
+}
+.ItemTodo:last-of-type {
+  border: none;
+  margin-bottom: 20px;
+}
+
+button.btn-excluir {
+  background-color: red;
+  box-shadow: none;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 0px 5px;
+  font-size: 18px;
+}
+
+button:disabled {
+  background-color: grey;
+  cursor: default;
+}
+
+button.btn-excluir:not(:disabled):hover {
+  background-color: darkred;
+  cursor: pointer;
+}
+
+h6 {
+  margin: 10px;
+}
